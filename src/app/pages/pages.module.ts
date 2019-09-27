@@ -6,6 +6,15 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages.routes';
 
+//importacion para poder usar el [(ngModel)]
+import {FormsModule} from '@angular/forms'
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+
+//greaficas
+import { ChartsModule } from 'ng2-charts';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
+
 
 
 @NgModule({
@@ -13,7 +22,9 @@ import { PagesRoutingModule } from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        PagesComponent
+        PagesComponent,
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     exports:[
         DashboardComponent,
@@ -23,7 +34,9 @@ import { PagesRoutingModule } from './pages.routes';
     ],
     imports:[
         SharedModule,
-        PagesRoutingModule
+        PagesRoutingModule,
+        FormsModule,
+        ChartsModule
     ]
 })
 
