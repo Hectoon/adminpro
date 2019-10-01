@@ -20,7 +20,7 @@ export class GraficoDonaComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.grafico);
+
   }
 
 
