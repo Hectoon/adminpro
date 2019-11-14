@@ -6,6 +6,8 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages.routes';
 
+import { CommonModule } from '@angular/common';
+
 //importacion para poder usar el [(ngModel)]
 import {FormsModule} from '@angular/forms'
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
@@ -16,6 +18,11 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
+
+//Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 
 
 
@@ -30,7 +37,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraficoDonaComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        ProfileComponent
     ],
     exports:[
         DashboardComponent,
@@ -39,10 +47,13 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         PagesComponent
     ],
     imports:[
+        CommonModule,
         SharedModule,
         PagesRoutingModule,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        PipesModule
+        
     ]
 })
 

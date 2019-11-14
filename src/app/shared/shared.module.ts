@@ -12,10 +12,14 @@ import { RouterModule } from '@angular/router';
 //se importa el CommonModule para poder usar *ngif, *ngFor y los pipes
 import { CommonModule } from '@angular/common';
 
+//pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 @NgModule({
     imports:[
         RouterModule,
-        CommonModule       
+        CommonModule,
+        PipesModule       
     ],
     declarations:[
         HeaderComponent,
