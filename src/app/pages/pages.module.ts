@@ -22,6 +22,8 @@ import { ProfileComponent } from './profile/profile.component';
 
 //Pipes
 import { PipesModule } from '../pipes/pipes.module';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 
@@ -38,7 +40,9 @@ import { PipesModule } from '../pipes/pipes.module';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent,
+        ModalUploadComponent
     ],
     exports:[
         DashboardComponent,
